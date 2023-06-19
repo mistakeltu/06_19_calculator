@@ -1,0 +1,41 @@
+.calculator {
+    height: 500px;
+    width: 350px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+    background-color: purple;
+    padding: 0;
+}
+
+.name {
+    color: white;
+    margin: 0;
+}
+
+p {
+    color: white;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    justify-content: center;
+
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
