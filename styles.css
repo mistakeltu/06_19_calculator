@@ -7,7 +7,8 @@
 
 .head {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: end;
     flex-direction: column;
     height: 150px;
     width: 350px;
@@ -18,7 +19,7 @@
 
 .name {
     color: white;
-    margin: 0;
+    margin: 10px;
 }
 
 p {
@@ -38,4 +39,10 @@ button {
     height: 60px;
     width: 60px;
     border-radius: 50px;
+}
+
+.math {
+    color: white;
+    padding: 10px;
+    height: 50px;
 }

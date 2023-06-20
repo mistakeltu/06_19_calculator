@@ -2,6 +2,7 @@ console.clear();
 console.log('wazeeee');
 
 const calculatorDOM = document.querySelector('main');
+// const numbersDOM = calculatorDOM.querySelectorAll('[data-numbers]')
 const oneDOM = calculatorDOM.querySelector('.one-btn');//1
 const twoDOM = calculatorDOM.querySelector('.two-btn');//2
 const threeDOM = calculatorDOM.querySelector('.three-btn');//3
@@ -14,7 +15,13 @@ const nineDOM = calculatorDOM.querySelector('.nine-btn');//9
 const zeroDOM = calculatorDOM.querySelector('.zero-btn');//0
 const acDOM = calculatorDOM.querySelector('.ac-btn');//ac-clear-one
 const cDOM = calculatorDOM.querySelector('.c-btn');//ac-clear-one
-
+const percentageDOM = calculatorDOM.querySelector('.percentage-btn');
+const divideDOM = calculatorDOM.querySelector('.divide-btn');
+const multiDOM = calculatorDOM.querySelector('.multi-btn');
+const minusDOM = calculatorDOM.querySelector('.minus-btn');
+const plusDOM = calculatorDOM.querySelector('.plus-btn');
+const pointDOM = calculatorDOM.querySelector('.point-btn');
+const equalDOM = calculatorDOM.querySelector('.equal-btn');
 
 const mathDOM = calculatorDOM.querySelector('.math');
 
@@ -22,7 +29,6 @@ let lengthCounter = '';
 
 oneDOM.addEventListener('click', () => {
     mathDOM.textContent = lengthCounter += '1';
-
 });
 twoDOM.addEventListener('click', () => {
      mathDOM.textContent = lengthCounter += '2';
@@ -57,3 +63,24 @@ acDOM.addEventListener('click', () => {
 cDOM.addEventListener('click', () => {
     mathDOM.textContent = lengthCounter = '';
 });
+percentageDOM.addEventListener('click', () => {
+     mathDOM.textContent = lengthCounter += '%';
+ });
+ plusDOM.addEventListener('click', () => {
+     mathDOM.textContent = lengthCounter += '+';
+ });
+ minusDOM.addEventListener('click', () => {
+     mathDOM.textContent = lengthCounter += '-';
+ });
+ pointDOM.addEventListener('click', () => {
+     mathDOM.textContent = lengthCounter += '.';
+ });
+ multiDOM.addEventListener('click', () => {
+     mathDOM.textContent = lengthCounter += '*';
+ });
+ divideDOM.addEventListener('click', () => {
+     mathDOM.textContent = lengthCounter += '/';
+ });
+ equalDOM.addEventListener('click', () => {
+     mathDOM.textContent = lengthCounter += '=';
+ });
